@@ -6,6 +6,7 @@ Source and local release workspaces for custom mods targeting Timberborn 1.1.
 
 | Mod | Description |
 | --- | --- |
+| [Guideline Numbers](GuidelineNumbers/) | Adds readable distance numbers to Timberborn's construction-guidelines cursor grid, starting at 1 under the cursor and counting outward in all four directions. |
 | [Idle Worker Alert](IdleWorkerAlert/) | Shows sustained idle-worker counts for Builder's Huts, District Centers, and Hauling Posts, with a native HUD alert for affected workplaces. |
 | [Natural Removal Button](NaturalRemovalButton/) | Exposes Timberborn's normal **Mark for demolition** action for natural resources, including supported plants added by other mods. |
 
@@ -19,7 +20,7 @@ Timberborn updates can change internal assemblies and APIs. Rebuild and retest t
 
 ## Building
 
-Both projects use PowerShell build scripts that compile against the assemblies in an installed Windows copy of Timberborn. By default, they expect the game at:
+Each project uses a PowerShell build script that compiles against the assemblies in an installed Windows copy of Timberborn. By default, they expect the game at:
 
 ```text
 C:\Program Files (x86)\Steam\steamapps\common\Timberborn
@@ -28,13 +29,14 @@ C:\Program Files (x86)\Steam\steamapps\common\Timberborn
 From the repository root, build a project with:
 
 ```powershell
+& .\GuidelineNumbers\build.ps1
 & .\IdleWorkerAlert\build.ps1
 & .\NaturalRemovalButton\Build.ps1
 ```
 
 Pass `-GameDirectory` when Timberborn is installed elsewhere.
 
-Idle Worker Alert also compiles against the Mod Settings mod. Its build script uses the default Steam Workshop location, or accepts a different path through `-ModSettingsDirectory`.
+Guideline Numbers also compiles against Harmony, and Idle Worker Alert compiles against Mod Settings. Their build scripts use the default Steam Workshop locations or accept different paths through `-HarmonyDirectory` and `-ModSettingsDirectory`.
 
 ## Installing local builds
 
@@ -47,8 +49,7 @@ Documents\Timberborn\Mods
 The resulting paths should look like:
 
 ```text
-Documents\Timberborn\Mods\IdleWorkerAlert\manifest.json
-Documents\Timberborn\Mods\NaturalRemovalButton\manifest.json
+Documents\Timberborn\Mods\<ModName>\manifest.json
 ```
 
 Start or restart Timberborn, enable the mod in the Mod Manager, and restart again if prompted.

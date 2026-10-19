@@ -1,0 +1,14 @@
+{
+  "Name": "Guideline Numbers",
+  "Version": "0.1.0",
+  "Id": "gem0303.GuidelineNumbers",
+  "MinimumGameVersion": "1.1.2.7",
+  "Description": "Adds readable distance numbers to the vanilla construction-guidelines cursor grid, starting at 1 under the cursor.",
+  "RequiredMods": [
+    {
+      "Id": "Harmony",
+      "MinimumVersion": "2.4.1"
+    }
+  ],
+  "OptionalMods": []
+}
