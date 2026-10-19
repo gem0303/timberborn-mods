@@ -1,0 +1,7 @@
+ID,Text,Comment
+Local.IdleWorkerAlert.Panel,Idle workers: {0} of {1},Shown in supported workplace entity panels.
+Local.IdleWorkerAlert.Status,This workplace has idle workers.,Shown in the selected building's status list.
+Local.IdleWorkerAlert.Alert,Idle workers,Shown in the bottom-left alert panel.
+Local.IdleWorkerAlert.Settings.Header,Idle worker detection,Heading in the Mod Settings panel.
+Local.IdleWorkerAlert.Settings.GracePeriod,Idle grace period (in-game hours),Label in the Mod Settings panel.
+Local.IdleWorkerAlert.Settings.GracePeriodTooltip,"How long a worker must remain idle before being reported. Accepts decimal values from 0 to 12; 0 reports idle workers immediately.",Tooltip in the Mod Settings panel.

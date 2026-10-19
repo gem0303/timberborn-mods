@@ -1,0 +1,9 @@
+{
+  "Name": "Natural Removal Button",
+  "Version": "0.3.0",
+  "Id": "gem0303.NaturalRemovalButton",
+  "MinimumGameVersion": "1.1.0.0",
+  "Description": "Shows the normal Mark for demolition button for natural resources. Includes vanilla blueprint fallbacks and diagnostic logging for automatic support of plants added by other mods.",
+  "RequiredMods": [],
+  "OptionalMods": []
+}

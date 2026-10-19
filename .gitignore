@@ -1,0 +1,17 @@
+# Generated build and test output
+*.dll
+*.pdb
+*.log
+bin/
+obj/
+
+# Packaged releases belong in GitHub Releases, not source history
+*.zip
+
+# Local IDE and OS metadata
+.vs/
+.idea/
+*.user
+*.suo
+.DS_Store
+Thumbs.db

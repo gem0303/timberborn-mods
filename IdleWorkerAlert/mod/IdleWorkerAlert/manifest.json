@@ -1,0 +1,14 @@
+{
+  "Name": "Idle Worker Alert",
+  "Version": "0.2.0",
+  "Id": "gem0303.IdleWorkerAlert",
+  "MinimumGameVersion": "1.1.1.0",
+  "Description": "Shows sustained idle worker counts for builder and hauling workplaces and adds a native HUD alert that cycles through affected buildings.",
+  "RequiredMods": [
+    {
+      "Id": "eMka.ModSettings",
+      "MinimumVersion": "1.1.1.0"
+    }
+  ],
+  "OptionalMods": []
+}

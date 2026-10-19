@@ -1,0 +1,2 @@
+*.log
+netstandard-only-test.dll
